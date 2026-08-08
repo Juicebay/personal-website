@@ -14,9 +14,9 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
         <a href="cv.html" class="active" aria-current="page">CV</a>
-        <a href="blog.html">Blog</a>
-        <a href="hobbies.html">Hobbies</a>
+        <a href="blog.html">Blog &amp; Life</a>
       </nav>
     </div>
   </header>
@@ -26,8 +26,12 @@
       <p class="eyebrow">Career</p>
       <h1>Curriculum Vitae</h1>
       <p>
-        Replace these sections with your own details. The button below lets you
-        save or print the page as a PDF.
+        Empirical microeconomist interested in urban and environmental
+        economics, market design, and the economics of AI.
+      </p>
+      <p>
+        <a href="mailto:xingming.li@mail.concordia.ca">xingming.li@mail.concordia.ca</a>
+        · Montréal, Canada
       </p>
       <button class="btn btn-primary" type="button" onclick="window.print()">
         Download / Print CV
@@ -35,53 +39,83 @@
     </section>
 
     <section class="cv-block">
-      <h2>Education</h2>
+      <h2 data-num="01">Education</h2>
       <div class="cv-item">
-        <h3>Ph.D. in [Field]</h3>
-        <p class="cv-meta">[University] · 2021 – 2026</p>
-        <p>Short description of your dissertation or research focus.</p>
+        <h3>Master of Arts in Economics (Thesis)</h3>
+        <p class="cv-meta">Concordia University, Montréal · Expected 2026 · GPA 4.08/4.33</p>
+        <p>
+          Selected coursework: Microeconomics I &amp; II, Macroeconomics I,
+          Economic Design, Industrial Organization, Applied Microeconometrics,
+          Applied Machine Learning.
+        </p>
       </div>
       <div class="cv-item">
-        <h3>B.S. in [Field]</h3>
-        <p class="cv-meta">[University] · 2017 – 2021</p>
-        <p>Optional line about your undergraduate work.</p>
-      </div>
-    </section>
-
-    <section class="cv-block">
-      <h2>Research &amp; Work Experience</h2>
-      <div class="cv-item">
-        <h3>Research Assistant</h3>
-        <p class="cv-meta">[Lab / Group], [University] · 2022 – Present</p>
-        <p>What you work on, what you contribute, and any notable outcomes.</p>
+        <h3>MSc in Environmental Economics and Management</h3>
+        <p class="cv-meta">Thompson Rivers University, Kamloops · 2021 – 2023 · GPA 3.97/4.33</p>
       </div>
       <div class="cv-item">
-        <h3>Teaching Assistant</h3>
-        <p class="cv-meta">[Course name], [University] · 2023</p>
-        <p>Courses you supported and what you did in the role.</p>
+        <h3>Bachelor of Tourism Management</h3>
+        <p class="cv-meta">Thompson Rivers University, Kamloops · 2017 – 2021</p>
       </div>
     </section>
 
     <section class="cv-block">
-      <h2>Skills</h2>
+      <h2 data-num="02">Awards &amp; Scholarships</h2>
       <ul class="cv-list">
-        <li><strong>Research:</strong> methods, tools, or techniques</li>
-        <li><strong>Programming:</strong> languages and frameworks</li>
-        <li><strong>Languages:</strong> native languages and proficiency levels</li>
+        <li>Faculty of Arts and Science Graduate Fellowship (MA), Concordia University (2025, 2026)</li>
+        <li>Steven Goldberg Entrance Bursary, Concordia University (2025)</li>
+        <li>Internal Graduate Scholarship, Concordia University (2024)</li>
+        <li>TRU Master's Medal, Thompson Rivers University (2023)</li>
+        <li>Poster Award — Air Pollution and Human Cognition (2023)</li>
       </ul>
     </section>
 
     <section class="cv-block">
-      <h2>Honors &amp; Awards</h2>
+      <h2 data-num="03">Research &amp; Teaching Experience</h2>
+      <div class="cv-item">
+        <h3>Teaching Assistant — Intermediate Microeconomics</h3>
+        <p class="cv-meta">Concordia University · Sep 2025 – Dec 2025</p>
+        <p>Graded assignments and exams; provided detailed written feedback.</p>
+      </div>
+      <div class="cv-item">
+        <h3>Research Assistant to Prof. Panagiotis Tsigaris</h3>
+        <p class="cv-meta">Thompson Rivers University · Sep 2022 – Dec 2022</p>
+        <p>
+          Built automated data pipelines in R and Selenium for large-scale
+          housing data; integrated spatial layers in ArcGIS for hedonic pricing
+          models; produced publication-quality LaTeX outputs.
+        </p>
+      </div>
+      <div class="cv-item">
+        <h3>Teaching Assistant — Principles of Microeconomics</h3>
+        <p class="cv-meta">Thompson Rivers University · Sep 2022 – Dec 2022</p>
+        <p>Led tutorials and Q&amp;A sessions; prepared supplementary exercises.</p>
+      </div>
+    </section>
+
+    <section class="cv-block">
+      <h2 data-num="04">Technical Skills</h2>
+      <div class="project-tags">
+        <span class="chip">R</span>
+        <span class="chip">Python</span>
+        <span class="chip">Matlab</span>
+        <span class="chip">LaTeX</span>
+        <span class="chip">Stata</span>
+        <span class="chip">ArcGIS</span>
+      </div>
+    </section>
+
+    <section class="cv-block">
+      <h2 data-num="05">Languages</h2>
       <ul class="cv-list">
-        <li>[Award name], [Year]</li>
-        <li>[Scholarship or fellowship], [Year]</li>
+        <li><strong>Mandarin</strong> — native</li>
+        <li><strong>English</strong> — fluent</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Xingming Li. Built with HTML &amp; CSS.</p>
+    <p>© <span id="year"></span> Xingming Li · Made with curiosity in Montréal.</p>
   </footer>
 
   <script src="assets/js/main.js"></script>

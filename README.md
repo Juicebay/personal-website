@@ -1,8 +1,21 @@
 # Personal Website
 
-A simple, elegant static academic/career website made with plain HTML and CSS.
-It includes a homepage, publications, CV, blog, and hobbies pages — no framework
-or build step needed.
+A simple, warm static academic/career website made with plain HTML and CSS —
+no framework or build step needed.
+
+## Pages
+
+- `index.html` — photo, bio, and “what I'm up to now”
+- `publications.html` — published work and work in progress
+- `projects.html` — research and coding projects
+- `cv.html` — education, awards, experience, skills
+- `blog.html` — blog posts plus hobbies, combined in one place
+- `blog/welcome.html` — the first post (copy it to add more)
+
+## Add your photo
+
+Drop a photo named **`profile.jpg`** into `assets/img/`. The homepage will use
+it automatically. A square or portrait crop works best.
 
 ## View it locally
 
@@ -14,19 +27,17 @@ python3 -m http.server 8000
 
 Then visit [http://localhost:8000](http://localhost:8000) in your browser.
 
-The site is plain HTML, so you can also just double-click `index.html`, though
-the local server is more accurate because it works exactly like GitHub Pages.
-
 ## Edit the content
 
-- `index.html` — name, tagline, and about text
-- `publications.html` — your papers
-- `cv.html` — education, experience, skills
-- `blog.html` + `blog/welcome.html` — posts (copy the post file to add more)
-- `hobbies.html` — hobbies and interests
-- `assets/css/style.css` — colors, fonts, and layout
+- Bio, tagline, and “Now” strip: `index.html`
+- Papers and talks: `publications.html`
+- Projects: `projects.html`
+- CV details: `cv.html`
+- Blog posts and hobbies: `blog.html` + `blog/`
+- Colors, fonts, and layout: `assets/css/style.css`
 
-Search for `[` in the HTML files to find the placeholder text to replace.
+The CV content was filled in from `CV_guelph.pdf`. The phone number was left
+off the public page; add it to `cv.html` if you want it there.
 
 ## Host it on GitHub Pages
 
@@ -44,11 +55,10 @@ Search for `[` in the HTML files to find the placeholder text to replace.
 
 3. In the repo on GitHub, go to **Settings → Pages**.
 4. Under **Build and deployment**, choose **Source: GitHub Actions**.
-5. The included workflow (`.github/workflows/pages.yml`) will build and publish
-   the site automatically.
+5. The included workflow (`.github/workflows/pages.yml`) will publish the site
+   automatically.
 
-For a personal site, the URL will be:
-`https://YOUR-USERNAME.github.io/YOUR-REPO/`
+The URL will be `https://YOUR-USERNAME.github.io/YOUR-REPO/`.
 
 If you name the repo exactly `YOUR-USERNAME.github.io`, it will be available at
 `https://YOUR-USERNAME.github.io/`.

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xingming Li — Personal Website</title>
+  <title>Xingming Li — Economist &amp; Researcher</title>
   <meta name="description" content="Personal academic and career website of Xingming Li.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -14,63 +14,91 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
         <a href="cv.html">CV</a>
-        <a href="blog.html">Blog</a>
-        <a href="hobbies.html">Hobbies</a>
+        <a href="blog.html">Blog &amp; Life</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>Xingming Li</h1>
-      <p class="tagline">Researcher in [your field]</p>
-      <p class="hero-text">
-        Replace this short intro with a sentence or two about what you do and what
-        excites you. For example: I study [your topic], build [your tools], and
-        enjoy turning complicated problems into clear explanations.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="cv.html">View CV</a>
-        <a class="btn" href="publications.html">Publications</a>
+      <div class="hero-grid">
+        <div class="hero-photo">
+          <img
+            class="profile-photo"
+            src="assets/img/profile.jpg"
+            onerror="this.onerror=null; this.src='assets/img/profile.svg';"
+            alt="Profile photo of Xingming Li"
+          >
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Xingming Li</h1>
+          <p class="tagline">Economist in training · urban &amp; environmental microeconomics</p>
+          <p class="hero-text">
+            I'm an MA economics (thesis) student at Concordia University. I care
+            about how markets, cities, and institutions shape everyday life —
+            and I enjoy turning data into stories.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="cv.html">View CV</a>
+            <a class="btn" href="publications.html">Publications</a>
+            <a class="btn" href="projects.html">Projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="now-strip">
+        <span class="now-dot" aria-hidden="true"></span>
+        <span>
+          <strong>Now:</strong> finishing my MA thesis on market design, preparing
+          PhD applications, and trying to make economics feel less intimidating.
+        </span>
       </div>
     </section>
 
     <section class="about">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title" data-num="01">About</h2>
       <p>
-        Write a longer version of your bio here: where you are, what you're
-        currently working on, and where people can find you (email, Google Scholar,
-        LinkedIn, GitHub, etc.).
+        I study empirical microeconomics with a focus on urban and environmental
+        economics. My current research looks at market design under affirmative
+        action, the economics of rental markets, and how competition between AI
+        models changes quality. Along the way I work with R, Python, Stata, and
+        ArcGIS.
+      </p>
+      <p>
+        Outside research, I write about what I'm learning, collect small
+        adventures, and believe good ideas deserve clear explanations.
+        You can reach me at
+        <a href="mailto:xingming.li@mail.concordia.ca">xingming.li@mail.concordia.ca</a>.
       </p>
     </section>
 
     <section>
-      <h2 class="section-title">Explore</h2>
+      <h2 class="section-title" data-num="02">Explore</h2>
       <div class="link-grid">
         <a class="link-card" href="publications.html">
           <h3>Publications</h3>
-          <p>Papers, preprints, and talks.</p>
+          <p>Papers, book chapters, and work in progress.</p>
+        </a>
+        <a class="link-card" href="projects.html">
+          <h3>Projects</h3>
+          <p>Research, code, and things I'm building.</p>
         </a>
         <a class="link-card" href="cv.html">
           <h3>CV</h3>
           <p>Education, experience, and skills.</p>
         </a>
         <a class="link-card" href="blog.html">
-          <h3>Blog</h3>
-          <p>Notes, ideas, and longer writing.</p>
-        </a>
-        <a class="link-card" href="hobbies.html">
-          <h3>Hobbies</h3>
-          <p>A little about life outside work.</p>
+          <h3>Blog &amp; Life</h3>
+          <p>Writing, hobbies, and small joys.</p>
         </a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Xingming Li. Built with HTML &amp; CSS.</p>
+    <p>© <span id="year"></span> Xingming Li · Made with curiosity in Montréal.</p>
   </footer>
 
   <script src="assets/js/main.js"></script>

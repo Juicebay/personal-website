@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog — Xingming Li</title>
-  <meta name="description" content="Blog posts by Xingming Li.">
+  <title>Blog &amp; Life — Xingming Li</title>
+  <meta name="description" content="Blog posts, hobbies, and interests of Xingming Li.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -14,33 +14,65 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
         <a href="cv.html">CV</a>
-        <a href="blog.html" class="active" aria-current="page">Blog</a>
-        <a href="hobbies.html">Hobbies</a>
+        <a href="blog.html" class="active" aria-current="page">Blog &amp; Life</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="page-head">
-      <p class="eyebrow">Writing</p>
-      <h1>Blog</h1>
-      <p>Notes, ideas, and longer pieces. New posts are added as simple HTML files.</p>
+      <p class="eyebrow">Notes &amp; small joys</p>
+      <h1>Blog &amp; Life</h1>
+      <p>
+        Not everything has to be peer-reviewed. This is where I keep longer
+        writing and the small things that make life interesting.
+      </p>
     </section>
 
-    <ul class="post-list">
-      <li>
-        <a class="post-card" href="blog/welcome.html">
-          <time datetime="2026-08-08">August 8, 2026</time>
-          <h2>Welcome to my site</h2>
-          <p>Why this site exists and what you'll find here.</p>
-        </a>
-      </li>
-    </ul>
+    <section>
+      <h2 class="section-title" data-num="01">Writing</h2>
+      <ul class="post-list">
+        <li>
+          <a class="post-card" href="blog/welcome.html">
+            <time datetime="2026-08-08">August 8, 2026</time>
+            <h2>Welcome to my site</h2>
+            <p>Why this site exists and what you'll find here.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title" data-num="02">Hobbies &amp; small joys</h2>
+      <div class="hobby-grid">
+        <div class="hobby-card">
+          <span class="hobby-icon">📷</span>
+          <h2>Photography</h2>
+          <p>Chasing good light, especially around water and mountains.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">🥾</span>
+          <h2>Hiking</h2>
+          <p>Long trails, short trails — mostly just being outside.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">📚</span>
+          <h2>Reading</h2>
+          <p>Economics by day, whatever captures my attention by night.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">☕</span>
+          <h2>Coffee &amp; conversations</h2>
+          <p>Ideas often show up halfway through a good cup.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Xingming Li. Built with HTML &amp; CSS.</p>
+    <p>© <span id="year"></span> Xingming Li · Made with curiosity in Montréal.</p>
   </footer>
 
   <script src="assets/js/main.js"></script>
