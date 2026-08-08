@@ -9,8 +9,10 @@ no framework or build step needed.
 - `publications.html` — published work and work in progress
 - `projects.html` — research and coding projects
 - `cv.html` — education, awards, experience, skills
-- `blog.html` — blog posts plus hobbies, combined in one place
+- `blog.html` — blog posts plus collections, combined in one place
 - `blog/welcome.html` — the first post (copy it to add more)
+- `blog/hiking.html`, `blog/photography.html`, `blog/reading.html`,
+  `blog/coffee.html`, `blog/research-notes.html` — running list pages
 
 ## Add your photo
 
@@ -38,6 +40,13 @@ Then visit [http://localhost:8000](http://localhost:8000) in your browser.
 
 The CV content was filled in from `CV_guelph.pdf`. The phone number was left
 off the public page; add it to `cv.html` if you want it there.
+
+## Add PDFs or links
+
+- Put PDFs in `assets/pdfs/`.
+- To link a paper to an external page (DOI, journal, article), replace the
+  `href` in `publications.html`.
+- Each project card in `projects.html` can hold its own PDF or article link.
 
 ## Host it on GitHub Pages
 
