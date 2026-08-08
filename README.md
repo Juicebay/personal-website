@@ -71,3 +71,30 @@ The URL will be `https://YOUR-USERNAME.github.io/YOUR-REPO/`.
 
 If you name the repo exactly `YOUR-USERNAME.github.io`, it will be available at
 `https://YOUR-USERNAME.github.io/`.
+
+## Connect a custom domain (optional)
+
+If you have your own domain (for example `yourname.com`), here's how to point
+it at GitHub Pages:
+
+1. In the GitHub repo, go to **Settings → Pages**.
+2. Under **Custom domain**, enter your domain (for example `yourname.com`) and
+   click **Save**.
+3. At your domain registrar or DNS provider, add one of these:
+   - **Apex/root domain** (`yourname.com`): four `A` records pointing to
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
+     `185.199.111.153`.
+   - **`www` subdomain** (`www.yourname.com`): one `CNAME` record pointing to
+     `YOUR-USERNAME.github.io`.
+4. Wait for DNS to update (usually a few minutes, sometimes up to 24 hours).
+5. To keep the domain attached to the repository, add a file named `CNAME` at
+   the project root containing just your domain, for example:
+
+   ```text
+   yourname.com
+   ```
+
+   Commit and push it. The GitHub Actions workflow will include it in the
+   deployment automatically.
+
+Once verified, the site will be available at your custom domain.
